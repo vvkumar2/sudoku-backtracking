@@ -630,11 +630,7 @@ int main()
                     {9,7,8,3,1,2,6,4,5}
     };
     encrypt(original);
-    
-    
-    generateBoardHard(original);
-    showGrid(original);
-    
+
     
     int stay = 1;
     
@@ -653,6 +649,7 @@ int main()
                         {9,7,8,3,1,2,6,4,5}
         };
 
+        encrypt(original);
         
         
         cout << "Do you want me to generate a new Sudoku board (1), or solve one for you? (2)" << endl;
@@ -764,9 +761,9 @@ int main()
             }
         }
         
-        cout << "Do you want to get a new board or find another solution (1), or exit (0)";
+        cout << "Do you want to get a new board or find another solution (1), or exit (0)"  << endl;
         cin >> stay;
-        cout << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+        cout << "\n\n\n\n";
     }
-    cout << "BYE!!";
+    cout << "BYE!!" << "\n\n\n\n";
 }
